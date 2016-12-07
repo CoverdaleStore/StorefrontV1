@@ -18,7 +18,7 @@ function breadcrumbs() {
         return [
             '<style>',
             '.breadcrumbs {margin-left: 5px;}',
-            '.breadcrumb {margin-bottom:0px;padding:14px 15px;background-color: transparent;}',
+            '.breadcrumb {margin-bottom:0px;padding:5px 10px;background-color: transparent;}',
             '.breadcrumb a{color: #333333;}',
             '.breadcrumbs li:last-child a{font-weight:bold;}',
             '</style>',

@@ -9,9 +9,8 @@
         <loadingindicator ng-show="couponRemoveIndicator" title="{{'Please wait while we remove your promotion code' | r | xlat}}" />
         <orderconfirmationmessage />
         <p>
-            <!--<span class="text-info">{{'Items' | r | xlat}}</span>
-            <span class="pull-right">{{currentOrder.LineItems.length}}</span>-->
-            <checkoutitemsummary></checkoutitemsummary>
+            <span class="text-info">{{'Items' | r | xlat}}</span>
+            <span class="pull-right">{{currentOrder.LineItems.length}}</span>
         </p>
         <p ng-if="!(user.Permissions.contains('HidePricing'))">
             <span class="text-info">{{'Subtotal' | r | xlat}}</span>
@@ -64,9 +63,5 @@
                 <span class="help-block text-left"><small>{{'Provide an email address if you would like to receive ' + ('Notification' | r) + 's concerning this order.' | r | xlat}}</small></span>
             </div>
         </div>
-        <!--<button class="btn btn-default" redirect="/security">
-            <span class="fa fa-info-circle"></span> {{'Concerned About Security?' | r | xlat}}
-        </button>-->
-        <securitymodal></securitymodal>
     </div>
 </div>

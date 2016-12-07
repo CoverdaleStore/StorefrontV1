@@ -4,8 +4,8 @@ angular.module('OrderCloud-HamburgerNavigation')
     .directive('hamburgernavigation', hamburgernavigation)
     .directive('hamburgernavcategorytree', hamburgernavcategorytree)
     .directive('hamburgernavnode', hamburgernavnode)
-    .directive('categorytree', categorytree)
-    .directive('node', node)
+    //directive('categorytree', categorytree)
+    //.directive('node', node)
     .controller('HamburgerNavigationCtrl', HamburgerNavigationCtrl)
 ;
 
@@ -21,6 +21,7 @@ function hamburgernavigation() {
         return [
             '<style>',
             //color changes start
+            '.navbar-hamburger, .navbar-hamburger > div, .navbar-default.burgers {background-color:#636467;}',
             '.navbar-hamburger .main-toggle i {color:#fff;}',
             'ul.burgers {margin:0; width:100%;}',
             //color changes end
@@ -39,7 +40,8 @@ function hamburgernavigation() {
             'ul.categories li ul li a, ul.account li a, ul.subcategories li a {color:#fff; font-size:95%; text-indent:5px;}',
             'ul.burgers .badge {margin-left:3px;}',
             '</style>',
-            '<header class="header navbar navbar-inner hidden-sm hidden-md hidden-lg">',
+            '<div class="hamburger-wrapper">',
+            '<header class="header navbar navbar-inner">',
             '<nav class="navbar navbar-default navbar-hamburger" role="navigation">',
             '<div>',
             '<a class="main-toggle" ng-click="isCollapsed = !isCollapsed" ng-class="{\'active\': !isCollapsed, \'\': isCollapsed}">',

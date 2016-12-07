@@ -17,7 +17,7 @@ function categorymodal() {
         return [
             '<style>',
             //this style is conditional based on nav placement and site css
-            'categorymodal a, categorymodal a:hover, categorymodal a:focus {color:#fff; text-decoration:none;}',
+            //'categorymodal a, categorymodal a:hover, categorymodal a:focus {color:#fff; text-decoration:none;}',
             '</style>',
             // update the size of the modal window within the open()
             '<a ng-click="openCategory(500)">',
@@ -57,19 +57,19 @@ function CategoryModalCtrl($scope, $modal, $log) {
         function categorymodalopen() {
             return [
                 '<style>',
-                '.modal-dialog {width: 300px; top:180px;}',
+                '.modal-dialog {width: 300px; top:60px;}',
                 '@media(max-width:767px) { .modal-dialog { width:100%; margin:0 auto;} }',
                 '.modal-header {border-bottom:1px solid #ccc; min-height:36px; padding:2px;}',
                 '.modal-header h3 { margin-top:0;}',
-                '.modal-header h5 { font-size:1.16em; font-weight:bold; padding:5px 10px; color:#FFFFFF; text-shadow:0 1px 0 #FFFFFF;}',
-                '.modal-header a.close {margin:0; padding:0; position:absolute; top:8px; right:10px; font-size:1.5em; color:#FFFFFF;}',
+                '.modal-header h5 { font-size:1.16em; font-weight:bold; padding:5px 10px; color:#606060; text-shadow:0 1px 0 #FFFFFF;}',
+                '.modal-header a.close {margin:0; padding:0; position:absolute; top:8px; right:10px; font-size:1.5em; color:#606060;}',
                 '.modal-body {width:100%; margin:0 auto; padding: 10px 0 20px 0;}',
                 '.modal-body ul li { padding:5px 15px;}',
                 //'.modal-body ul li:hover, .modal-body ul li ul li:hover {background:#A80309;}',
                 '.modal-body ul li ul li {text-indent:10px; padding:5px 0 0 0}',
-                '.modal-body a {color:#FFFFFF; }',
+                '.modal-body a {color:#606060; }',
                 '</style>',
-                '<div class="modal-header navbar-default" class="col-xs-12 row pull-right">',
+                '<div class="modal-header navbar-default">',
                 '<h5 class="modal-title text-primary">SELECT A CATEGORY</h5>',
                 '<a class="pull-right close" ng-click="closeCategory()">',
                 '<i class="fa fa-times"></i>',

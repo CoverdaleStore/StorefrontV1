@@ -21,7 +21,6 @@ function customcarousel() {
             '.carousel-inner a[ng-href=""]:hover{cursor: default}',
             '.carousel-control.left {background-image: none;}',
             '.carousel-control.right {background-image: none;}',
-            '.carousel-caption {display: none;}',
             '</style>',
             '<carousel interval="myInterval">',
             '<slide ng-repeat="slide in slides" active="slide.active">',

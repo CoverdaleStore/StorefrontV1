@@ -48,7 +48,7 @@ function collapsenode($compile) {
 
     function template() {
         return [
-            '<li ng-class="{\'active\':  current.InteropID == node.InteropID}">',
+            '<li class="451_cat_item" ng-class="{\'active\':  current.InteropID == node.InteropID}">',
             '<a ng-show="node.SubCategories" ng-click="toggle()">{{node.Name}}&nbsp;<i class="fa fa-caret-down"></i></a>',
             '<a ng-hide="node.SubCategories" ng-href="catalog/{{node.InteropID}}" ng-bind-html="node.Name"></a>',
             '</li>'
